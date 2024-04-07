@@ -132,7 +132,10 @@ section{
     text-decoration: none;
 }
 
-
+.icons ::placeholder {
+    font-size: 23px;
+    text-align: center;
+}
 
 body{
     height: fit-content;
