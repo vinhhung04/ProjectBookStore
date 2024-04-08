@@ -27,7 +27,7 @@
     <li><a href="#" class="active">Home</a></li>
     <li><a href="#">All Products</a></li>
     <li><a href="#">About Us</a></li>
-    <li><a href="#">Support</a></li>
+    <li><a href="#footer_content">Support</a></li>
     </nav>
 
     <div class="icons">
@@ -56,14 +56,14 @@
                 <div class="video-text-overlay" id="videotext">
                     <h3 style="font-size: 80px; color: #fefefe; font-family:'Pattaya';letter-spacing: 4px;">Manga Sale 25%</h3>
                     <p style="text-align: left; color: white;padding: 0 15px; font-family: 'Shantell Sans';">"Một mùa hè, Hodaka, một học sinh trung học, rời khỏi quê nhà để đến Tokyo. Tại đây, anh gặp Hina, một cô gái trẻ sống cùng em trai và có khả năng đặc biệt là làm dừng mưa bằng cách cầu nguyện. Hodaka và Hina trở thành bạn thân và cùng nhau trải qua nhiều cuộc phiêu lưu. Tuy nhiên, họ phải đối mặt với nhiều khó khăn và thử thách trong cuộc sống."</p>
-                    <a href="#" class="btn">Buy Now</a>
+                    <a href="../html/sach1.html" class="btn">Buy Now</a>
                 </div>
             </div>
         </div>
             <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><a href=""><img src="../img/duaconthoitieet2.jpg" alt=""></a></div>
-              <div class="swiper-slide"><a href=""><img src="../img/duacontt1.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="../html/sach1.html"><img src="../img/duacontt1.jpg" alt=""></a></div>
               <div class="swiper-slide"><a href=""><img src="../img/duacontt2.png" alt=""></a></div>
               <div class="swiper-slide"><a href=""><img src="../img/duacontt3.jpg" alt=""></a></div>
               
@@ -79,6 +79,42 @@
 </section>
 <!-- ---------------------------------------------------------------------------------Main--------------------------------------------------------------------------------- -->
 <main>
+
+    <div class="popup-overlay" id="popup-overlay"></div>
+    <div class="popup" id="login-form">
+        <form class="form" id="signup-form">
+            <p class="title">Register</p>
+            <p class="message">Signup now and get full access to our app.</p>
+            <div class="flex">
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Firstname</span>
+                </label>
+            
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Lastname</span>
+                </label>
+            </div>  
+                        
+            <label>
+                <input required="" placeholder="" type="email" class="input">
+                <span>Email</span>
+            </label> 
+                    
+            <label>
+                <input required="" placeholder="" type="password" class="input">
+                <span>Password</span>
+            </label>
+            <label>
+                <input required="" placeholder="" type="password" class="input">
+                <span>Confirm password</span>
+            </label>
+            <button class="submit">Submit</button>
+            <p class="signin">Already have an account? <a href="#">Sign in</a></p>
+        </form>
+    </div>
+
     <div class="main-content">
         <div class="sach">
             <br>
@@ -245,6 +281,9 @@
                 <p>Có thể đổi trả tại KOBOS</p>
               </div>
             </div>
+
+
+        
 </main>
 
 
@@ -419,10 +458,6 @@ document.addEventListener('DOMContentLoaded', function () {
   
   firstSach.classList.add('show');
 });
-
-
-
-
 
 </script>
 
