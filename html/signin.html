@@ -13,105 +13,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="icon" type="image/png" href="../img/icon.png">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        :root{
-            --border: .3px solid rgba(0,0,0.1);
-            --border-hover: 1px solid rgba(0,0,0.1);
-            --color-neutral-0: #070606;
-            --color-neutral-10: #010101;
-            --color-neutral-30: #a8a29e;
-            --color-neutral-40: #f5f5f5;
-        }
-         header, main, footer {
-            display: block;
-            clear: both;
-        }
-       /* header*/
-        .header{
-        display: flex;
-        }
-        .header .header-2 .header-1{
-            display: flex;
-        }
-        .header .header-2 .header-1 img{
-            width: 200px;
-            height: 100px;
-            background-color:#11101b;
-            align-items: center;
-            display: flex;
-        }
-        .header .header-1{
-            width: 10px;
-            height: 20px;
-            text-align: center;
-            align-items: center;
-
-        }
-
-
-        .header .header-2 .icons div, 
-        .header .header-2 .icons a{
-            font-size: 30px;
-            margin-left: 12px;
-            color: #fefefe;
-            cursor: pointer;
-            float: left;
-        }
-
-        .header .header-2 .icons div:hover, 
-        .header .header-2 .icons a:hover{
-            transform: scale(1.05);
-        }
-
-        .header .header-2 .icons{
-            float: right;
-        }
-
-        .header .header-2{
-            font-size: 25px;
-            background: #11101b;
-            width: 100%;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content:space-around;
-
-        }
-
-        .header .header-2 .menu{
-            display: flex;
-        }
-
-        .header .header-2 .menu li{
-            list-style-type: none;
-            display: inline-block;
-        }
-
-        .header .header-2 .menu li a{
-            display: inline-block;
-            color: #fefefe;
-            padding: 10px 25px;
-            margin: 0 5px;
-            border-radius:  50px;
-            transition: 0.2s;
-            text-decoration: none;
-        }
-        .header .header-2 .menu li a.active{
-            color: #11101b;
-            background: #fefefe;
-        }
-
-        .header .header-2 .menu li a:hover {
-            color: #11101b;
-            background: #fefefe;
-        }
 
         /*main*/
         main {
@@ -120,14 +21,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
         }
        
-        #background-video {
+        #background-video1 {
             position: fixed;
             right: 0;
             bottom: 0;
-            min-width: 100%; 
-            min-height: 100%;
             width: auto; 
             height: auto;
             z-index: -1; 
@@ -135,18 +35,13 @@
         form {
             color: #f5f5f5;
             max-width: 500px;
-            height: 300px;
+            height: 330px;
             background: rgba(0, 0, 0, 0.8);
             flex-grow: 1;
             padding: 30px 30px 40px;
             box-shadow: 0px 0px 17px rgba(255, 255, 255, 0.8);
         }
-        h1 {
-            font-size: 25px;
-            color: #f5f5f5;
-            text-align: center;
-            margin-bottom: 30px;
-        }
+
         .form-group {
             color: #f5f5f5;
             margin-top: 15px;
@@ -164,278 +59,7 @@
         .btn {
             width: 100%;
         }
-        /*footer*/
-        footer {
-            width: 100%;
-            color: var(--color-neutral-40);
-        }
 
-        .footer-link {
-            text-decoration: none;
-        }
-
-        #footer_content {
-            background-color: var(--color-neutral-10);
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            padding: 48px 56px;
-        }
-
-        #footer_contacts h1 {
-            margin-bottom: 12px;
-        }
-
-        #footer_social_media {
-            display: flex;
-            gap: 32px;
-            margin-top: 1.5rem;
-            justify-content: center;
-        } 
-
-        #footer_social_media .footer-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 40px;
-            width: 40px;
-            color: var(--color-neutral-40);
-            border-radius: 50%;
-            transition: all 0.4s;
-        }
-
-        #footer_social_media .footer-link i {
-            font-size: 20px;    
-        }
-
-        #footer_social_media .footer-link:hover {
-            opacity: 0.8;
-        }
-
-        #instagram {
-            background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-        }
-
-        #facebook {
-            background-color: #4267b3;
-        }
-
-        #tiktok {
-            background-color: black;
-        }
-
-        .footer-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            list-style: none;
-        }
-
-        .footer-list h3{
-            color: white;
-        }
-        .footer-list .footer-link {
-            color: var(--color-neutral-30);
-            transition: all 0.4s;
-        }
-
-        .footer-list .footer-link:hover {
-            color: #7f37c9;
-        }
-
-        #footer_subscribe {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        #footer_subscribe p {
-            color: var(--color-neutral-30);
-        }
-
-        #input_group {
-            display: flex;
-            align-items: center;
-            background-color: var(--color-neutral-0);
-            border-radius: 4px;
-        }
-
-        #input_group input {
-            all: unset;
-            padding: 0.75rem;
-            width: 100%;
-        }
-
-
-        #input_group button {
-            background-color: #7f37c9;
-            border: none;
-            color: var(--color-neutral-40);
-            padding: 0px 20px;
-            font-size: 16px;
-            height: 100%;
-            border-radius: 0px 4px 4px 0px;
-            cursor: pointer;
-            transition: all 0.4s;
-        }
-
-        #input_group button:hover {
-            opacity: 0.8;
-        }
-
-        #footer_copyright {
-            display: flex;
-            justify-content: center;
-            background-color: var(--color-neutral-0);
-            font-size: 13px;
-            padding: 24px;
-            font-weight: 100;
-            text-align: center;
-        }
-
-
-
-
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            z-index: 999;
-        }
-        
-        .popup-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 998;
-        }
-        
-        .popup .form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            max-width: 350px;
-        }
-        
-        .popup .title {
-            font-size: 28px;
-            color: royalblue;
-            font-weight: 600;
-            letter-spacing: -1px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            padding-left: 30px;
-        }
-        
-        .popup .title::before,
-        .popup .title::after {
-            position: absolute;
-            content: "";
-            height: 16px;
-            width: 16px;
-            border-radius: 50%;
-            left: 0px;
-            background-color: royalblue;
-        }
-        
-        .popup .title::before {
-            width: 18px;
-            height: 18px;
-            background-color: royalblue;
-        }
-        
-        .popup .title::after {
-            width: 18px;
-            height: 18px;
-            animation: pulse 1s linear infinite;
-        }
-        
-        .popup .message,
-        .popup .signin {
-            color: rgba(88, 87, 87, 0.822);
-            font-size: 14px;
-        }
-        
-        .popup .signin {
-            text-align: center;
-        }
-        
-        .popup .signin a {
-            color: royalblue;
-        }
-        
-        .popup .signin a:hover {
-            text-decoration: underline royalblue;
-        }
-        
-        .popup .flex {
-            display: flex;
-            width: 100%;
-            gap: 6px;
-        }
-        
-        .popup .form label {
-            position: relative;
-        }
-        
-        .popup .form label .input {
-            width: 100%;
-            padding: 10px 10px 20px 10px;
-            outline: 0;
-            border: 1px solid rgba(105, 105, 105, 0.397);
-            border-radius: 10px;
-        }
-        
-        .popup .form label .input + span {
-            position: absolute;
-            left: 10px;
-            top: 15px;
-            color: grey;
-            font-size: 0.9em;
-            cursor: text;
-            transition: 0.3s ease;
-        }
-        
-        .popup .form label .input:placeholder-shown + span {
-            top: 15px;
-            font-size: 0.9em;
-        }
-        
-        .popup .form label .input:focus + span,
-        .popup .form label .input:valid + span {
-            top: 30px;
-            font-size: 0.7em;
-            font-weight: 600;
-        }
-        
-        .popup .form label .input:valid + span {
-            color: green;
-        }
-        
-        .popup .submit {
-            border: none;
-            outline: none;
-            background-color: royalblue;
-            padding: 10px;
-            border-radius: 10px;
-            color: #fff;
-            font-size: 16px;
-            transform: .3s ease;
-        }
-        
-        .popup .submit:hover {
-            background-color: rgb(56, 90, 194);
-        }
     </style>
 
 </head>
@@ -449,29 +73,30 @@
                 </div>
                 
                 <nav class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">All Products</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#footer_content">Support</a></li>
-                </nav>
+                    <li><a href="../html/home.html" class="active">Home</a></li>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="../html/gioithieukobos.html#aboutus">About Us</a></li>
+                    <li><a href="#footer_content">Support</a></li>
+                    </nav>
             
                 <div class="icons">
                     <div><input type="text" placeholder="Search here" name="search" style="border-radius: 20px; width: 250px;"></div>
                     <div id="search-btn" class="bi bi-search"></div>
                         <a href="#" class="bi bi-bookmark-heart-fill"></a>
                         <a href="#" class="bi bi-bag-fill"></a>
-                        <div id="login-btn" class="bi bi-person-circle"></div>
+                        <a href="../html/signin.html" class="bi bi-person-circle"></a>
                 </div>
             </div>
         </header>
         <main>
+
         <div>
-            <video autoplay muted loop id="background-video">
+            <video autoplay muted loop id="background-video1">
                 <source src="../img/SignInBG.mp4" type="video/mp4">
             </video>
         </div>
         <form action="" class="form">
-            <h1>Sign In</h1>
+            <h1 class="text-center">Sign In</h1>
             <div class="form-group">
                 <label for="txtName">Tên Đăng Nhập: </label>
                 <input type="text" name="txtName" id="txtName" placeholder="Nguyen Van A" class="form-input">
@@ -493,7 +118,11 @@
                 
             </div>
             <button type="submit" class="btn btn-primary">Sign In</button>
+            <div class="mt-3">
+                <a href="../html/login.html"><button type="button" class="btn btn-primary">Log In</button></a>
+            </div>
         </form>
+
         </main>
  <!------------------------------------------------------------------------------------------------footer------------------------------------------------------------------------------------>
 
