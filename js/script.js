@@ -1,3 +1,5 @@
+
+//  tang giam so luong don hang
 document.addEventListener("DOMContentLoaded", function() {
     const minusButton = document.querySelector(".minus-btn");
     const plusButton = document.querySelector(".plus-btn");
@@ -29,23 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
     event.preventDefault();
     event.target.innerHTML = "<b>Đã thêm vào giỏ hàng</b>";
 }
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const loginBtn = document.getElementById("login-btn");
-    const loginForm = document.getElementById("login-form");
-    const popupOverlay = document.getElementById("popup-overlay");
-
-    loginBtn.addEventListener("click", function() {
-        loginForm.style.display = "block";
-        popupOverlay.style.display = "block";
-    });
-
-    popupOverlay.addEventListener("click", function() {
-        loginForm.style.display = "none";
-        popupOverlay.style.display = "none";
-    });
-});
 
 
 
@@ -110,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
+// Hover vao bxh 
 document.addEventListener('DOMContentLoaded', function () {
   const hoverables = document.querySelectorAll('.hoverable');
   const firstSach = document.querySelector('.sach1');
@@ -130,3 +115,5 @@ document.addEventListener('DOMContentLoaded', function () {
   
   firstSach.classList.add('show');
 });
+
+
